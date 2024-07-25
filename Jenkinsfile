@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Add your test commands here if you have tests
+                sh 'mvn test'
             }
         }
     }
