@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        MAVEN_HOME = tool 'Maven-3.9.0' 
+    }
     stages {
         stage('Build') {
             steps {
